@@ -1,0 +1,106 @@
+:root {
+    --e-global-color-primary: #111111;
+    --e-global-color-secondary: #141414;
+    --e-global-color-text: #5A5A5A;
+    --e-global-color-accent: #FFCA3D;
+    --e-global-color-a2e875e: #FFFFFF;
+    --e-global-color-0c9653f: #F0ECEA;
+    --e-global-color-af230bd: #623D2D;
+    --e-global-color-d1c733e: #301D16;
+    --e-global-color-3b5cda1: #DDDDDD;
+    --e-global-color-84ab9b4: #F0ECEA;
+    --e-global-color-4a85818: #FFB900;
+    --e-global-color-37d844e: #2F2F2F;
+    --e-global-color-7f9c9d2: #F7F4F3;
+}
+.acieve-page {
+    background-color: var(--e-global-color-0c9653f);
+    margin-top: 7rem;
+    padding-top: 5rem;
+    padding-bottom: 15rem;
+}
+.achieve-badge {
+    border: 1px solid var(--e-global-color-primary);
+    border-radius: 1.5rem;
+    color: var(--e-global-color-primary);
+    font-weight: 600;
+    width: fit-content;
+    font-size: 0.9rem;
+    padding: 0.4rem 1rem;
+    margin: 2rem 0;
+}
+.achieve-icon {
+    margin-right: 0.3rem;
+}
+.achieve-title {
+    color: var(--e-global-color-primary);
+    font-size: 2.8rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
+}
+.ach-lemo-box {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.ler-mor-btn {
+    background-color: var(--e-global-color-accent);
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--e-global-color-primary);
+    border: none;
+    border-radius: 3px;
+    padding: 0.6rem 1.3rem;
+    transition: all .3s;
+}
+.ler-mor-btn:hover {
+    background-color: var(--e-global-color-4a85818);
+}
+.myachiSwiper img{
+    border-style: none;
+    max-width: 100%;
+    height: auto;
+}
+.counter-box {
+    margin-top: 2rem;
+    margin-bottom: -0.7rem;
+}
+.counter-title {
+    color: var(--e-global-color-primary);
+    font-weight: 400;
+}
+.counter-number {
+    font-size: 3.75rem;
+    color: var(--e-global-color-primary);
+}
+.counter-hr{
+    margin: 0 0;
+    color: #545454;
+    border: 0;
+    border-top: var(--bs-border-width) solid;
+    opacity: .13;
+}
+/* tablet */
+@media (min-width: 768px) and (max-width: 1024px) { 
+.achieve-title {
+    font-size: 2.5rem;
+}
+}  
+/* mobile */
+@media (max-width: 575.98px) { 
+ .achieve-title {
+    font-size: 2rem;
+}
+.ach-lemo-box {
+    justify-content: start;
+}
+.ler-mor-btn {
+   margin-bottom: 3rem;
+}
+.counter-title {
+    font-size: 1rem;
+}
+.counter-number {
+    font-size: 1.75rem;
+}
+ }

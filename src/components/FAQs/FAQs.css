@@ -1,0 +1,104 @@
+:root {
+    --e-global-color-primary: #111111;
+    --e-global-color-secondary: #141414;
+    --e-global-color-text: #5A5A5A;
+    --e-global-color-accent: #FFCA3D;
+    --e-global-color-a2e875e: #FFFFFF;
+    --e-global-color-0c9653f: #F0ECEA;
+    --e-global-color-af230bd: #623D2D;
+    --e-global-color-d1c733e: #301D16;
+    --e-global-color-3b5cda1: #DDDDDD;
+    --e-global-color-84ab9b4: #F0ECEA;
+    --e-global-color-4a85818: #FFB900;
+    --e-global-color-37d844e: #2F2F2F;
+    --e-global-color-7f9c9d2: #F7F4F3;
+}
+.FAQs-row {
+   margin-top: 5rem;
+   margin-bottom: 7rem;
+}
+.FAQs-badge {
+    border: 1px solid var(--e-global-color-secondary);
+    border-radius: 1rem;
+    color: var(--e-global-color-secondary);
+    font-weight: 500;
+    width: fit-content;
+    font-size: 0.8rem;
+    padding: 0.4rem 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.FAQs-icon {
+    margin-right: 0.3rem;
+}
+.FAQs-heading {
+    color: var(--e-global-color-secondary);
+    font-weight: 400;
+    font-size: 3.5rem;
+}
+.FAQs-p-box {
+    display: flex;
+    align-items: flex-end;
+}
+.FAQs-para {
+    color: var(--e-global-color-text);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.accordion {
+  width: 100%;
+  /* max-width: 1000px; */
+  margin: 3rem auto;
+}
+.accordion-item { 
+  margin: 1rem 0;
+  border-radius: 3px;
+  border: none;
+}
+.accordion-item-header {
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  min-height: 3.4rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.accordion-item-header::after {
+  content: "\002B";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+  font-weight: bold;
+}
+.accordion-item-header.active::after {
+  content: "\2212";
+}
+.accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+.accordion-item-body-content {
+  padding: 1rem;
+  line-height: 1.5rem;
+  background-color: transparent;
+  color: var(--e-global-color-text);
+}
+/* tablet */
+@media (min-width: 768px) and (max-width: 1024px) { 
+.FAQs-heading {
+    font-size: 2.5rem;
+}
+}  
+/* mobile */
+@media (max-width: 575.98px) { 
+.FAQs-heading {
+    font-size: 2.4rem;
+}
+.accordion-item-header {
+ font-size: 0.9rem;
+}
+ }

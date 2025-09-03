@@ -1,0 +1,55 @@
+:root {
+    --e-global-color-primary: #111111;
+    --e-global-color-secondary: #141414;
+    --e-global-color-text: #5A5A5A;
+    --e-global-color-accent: #FFCA3D;
+    --e-global-color-a2e875e: #FFFFFF;
+    --e-global-color-0c9653f: #F0ECEA;
+    --e-global-color-af230bd: #623D2D;
+    --e-global-color-d1c733e: #301D16;
+    --e-global-color-3b5cda1: #DDDDDD;
+    --e-global-color-84ab9b4: #F0ECEA;
+    --e-global-color-4a85818: #FFB900;
+    --e-global-color-37d844e: #2F2F2F;
+    --e-global-color-7f9c9d2: #F7F4F3;
+}
+.banner-img-con {
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-img-con::before {
+  content: "";
+  position: absolute;
+  inset: 0; 
+  background-color: var(--e-global-color-af230bd);
+  opacity: 0.6;
+  z-index: 1;
+}
+.banner-img-con > * {
+  position: relative;
+  z-index: 2;
+}
+.banner-heading {
+  color: var(--e-global-color-a2e875e);
+  font-size: 4rem;
+}
+/* tablet */
+@media (min-width: 768px) and (max-width: 1024px) { 
+.banner-heading {
+  font-size: 3.5rem;
+}
+}
+/* mobile */
+@media (max-width: 575.98px) { 
+.banner-heading {
+  font-size: 2.5rem;
+}
+ }

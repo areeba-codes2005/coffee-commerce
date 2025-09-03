@@ -1,0 +1,218 @@
+:root {
+    --e-global-color-primary: #111111;
+    --e-global-color-secondary: #141414;
+    --e-global-color-text: #5A5A5A;
+    --e-global-color-accent: #FFCA3D;
+    --e-global-color-a2e875e: #FFFFFF;
+    --e-global-color-0c9653f: #F0ECEA;
+    --e-global-color-af230bd: #623D2D;
+    --e-global-color-d1c733e: #301D16;
+    --e-global-color-3b5cda1: #DDDDDD;
+    --e-global-color-84ab9b4: #F0ECEA;
+    --e-global-color-4a85818: #FFB900;
+    --e-global-color-37d844e: #2F2F2F;
+    --e-global-color-7f9c9d2: #F7F4F3;
+}
+/*  Main container */
+.new-flv-con {
+  padding-top: 7rem;
+}
+
+/*  Left image */
+.left-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+/*  Right accordion column */
+.rig-acc-col {
+  background-color: var(--e-global-color-0c9653f);
+  padding: 2rem 1.5rem 0 1.5rem;
+}
+
+/*  Heading */
+.new-flv-hea {
+  color: var(--e-global-color-primary);
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+/*  Accordion container */
+.coffee-accordion {
+  border-top: 1px solid var(--e-global-color-3b5cda1);
+}
+
+/*  Each accordion item */
+.coffee-accordion-item {
+  border-bottom: 1px solid var(--e-global-color-3b5cda1);
+  padding: 0.8rem 0;
+  cursor: pointer;
+}
+
+/*  Accordion header */
+.coffee-accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Accordion title inside header */
+.coffee-accordion-header .acc-title {
+  color: var(--e-global-color-primary);
+  font-size: 1rem;
+}
+
+/* Toggle icon inside header */
+.coffee-accordion-header .toggle-icon {
+  font-size: 2.1rem;
+  font-weight: bold;
+  line-height: 1;
+  user-select: none;
+  color: var(--e-global-color-primary);
+  transition: transform 0.9s ease;
+}
+.coffee-accordion-header.active .toggle-icon {
+  transform: rotate(180deg);
+}
+
+/* Accordion body / content */
+.coffee-accordion-content {
+  padding-top: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Details (text side) */
+.coffee-details {
+  flex: 1 1 60%;
+  min-width: 12rem;
+}
+
+/* Stars inside details */
+.coffee-details .star {
+  color: #f0ad4e;
+  padding: 0.2rem;
+  font-size: 1.2rem;
+}
+
+/* Description inside details */
+.coffee-details .acc-des {
+  color: var(--e-global-color-text);
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2.3rem;
+}
+
+/* Badge + Price + Button inside details */
+.coffee-details .av-ou-badge {
+  padding: 0.3rem 1rem;
+  border-radius: 0.9rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--e-global-color-a2e875e);
+}
+
+.coffee-details .badge-available {
+  background-color: var(--e-global-color-d1c733e);
+}
+
+.coffee-details .badge-outofstock {
+  background-color: var(--e-global-color-af230bd);
+}
+
+.coffee-details .price {
+  color: var(--e-global-color-primary);
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 1.15rem;
+}
+
+.coffee-details .price span {
+  color: var(--e-global-color-text);
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+
+.coffee-details .or-now-btn {
+  background-color: var(--e-global-color-accent);
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--e-global-color-primary);
+  border: none;
+  border-radius: 3px;
+  padding: 0.6rem 1.3rem;
+  transition: all 0.3s;
+}
+
+.coffee-details .or-now-btn:hover {
+  background-color: var(--e-global-color-4a85818);
+}
+
+/* 8e️⃣ Swiper slider inside accordion content */
+.coffee-accordion-content .coffee-swiper {
+  flex: 1 1 30%;
+  max-width: 11rem;
+}
+
+/* Wrapper div around image */
+.coffee-accordion-content .coffee-swiper .coffee-img-wrapper {
+  width: 100%;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+/* Image inside wrapper */
+.coffee-accordion-content .coffee-swiper .small-coffee-img {
+  width: 100%;
+  display: block;
+}
+
+/* Swiper pagination bullets */
+.mySwiper .swiper-pagination-bullet {
+  background-color: var(--e-global-color-a2e875e);
+  opacity: 1;
+}
+
+.mySwiper .swiper-pagination-bullet-active {
+  background-color: var(--e-global-color-accent);
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-0.3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1024px) { 
+      .new-flv-hea {
+    font-size: 2.5rem;
+}
+.coffee-accordion-content .coffee-swiper {
+  max-width: 20rem;
+  margin: 0 auto;
+}
+}  
+/* mobile */
+@media (max-width: 575.98px) { 
+      .new-flv-hea {
+    font-size: 2.3rem;
+}
+.coffee-accordion-content .coffee-swiper {
+  max-width: 20rem;
+  margin: 0 auto;
+}
+ }

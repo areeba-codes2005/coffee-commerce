@@ -1,0 +1,126 @@
+:root {
+    --e-global-color-primary: #111111;
+    --e-global-color-secondary: #141414;
+    --e-global-color-text: #5A5A5A;
+    --e-global-color-accent: #FFCA3D;
+    --e-global-color-a2e875e: #FFFFFF;
+    --e-global-color-0c9653f: #F0ECEA;
+    --e-global-color-af230bd: #623D2D;
+    --e-global-color-d1c733e: #301D16;
+    --e-global-color-3b5cda1: #DDDDDD;
+    --e-global-color-84ab9b4: #F0ECEA;
+    --e-global-color-4a85818: #FFB900;
+    --e-global-color-37d844e: #2F2F2F;
+    --e-global-color-7f9c9d2: #F7F4F3;
+}
+.dro-contact-page {
+  color: var(--e-global-color-text);
+  margin-top: 7rem;
+}
+.get-news-con {
+    background-color:  var(--e-global-color-7f9c9d2);
+    border-radius: 3px;
+}
+.dro-contact-page .form-wrapper .section-title {
+  color: var(--e-global-color-primary);
+  font-weight: 400;
+  text-align: start;
+}
+.dro-contact-page .form-control:focus {
+  box-shadow: none;
+  outline: 0.5px solid #ebeaea;
+}
+.dro-contact-page .form-control {
+  border: none !important;      
+  border-radius: 2px;
+  background-color: var(--e-global-color-a2e875e);
+}
+.dro-contact-page .form-control::placeholder {
+   color: #abaaaa;
+}
+.dro-con-send {
+    background-color: var(--e-global-color-accent);
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: var(--e-global-color-primary);
+    border: none;
+    border-radius: 3px;
+    padding: 0.7rem 5rem;
+    margin-top: 1rem;
+    transition: all .3s;
+}
+.dro-con-send:hover {
+    background-color: var(--e-global-color-4a85818);
+    color: var(--e-global-color-a2e875e);
+}
+.get-news-con .newsletter-wrapper {
+ background-position: center center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ border-radius: 3px;
+}
+.get-news-con .newsletter-wrapper .our-news-title {
+  color: var(--e-global-color-a2e875e);
+  font-weight: 400;
+}
+.get-news-con .newsletter-wrapper p {
+  color: var(--e-global-color-a2e875e);
+  margin: 2rem 0;
+}
+.get-news-con .newsletter-wrapper .se-em {
+    background-color: var(--e-global-color-accent);
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: var(--e-global-color-primary);
+    border: none;
+    border-radius: 3px;
+    padding: 0.7rem 5rem;
+    transition: all .3s;
+}
+.get-news-con .newsletter-wrapper .se-em:hover {
+    background-color: var(--e-global-color-4a85818);
+    color: var(--e-global-color-a2e875e);
+}
+.dro-contact-page .contact-box-first {
+ background-color: var(--e-global-color-af230bd);
+ border-radius: 3px ;
+ padding: 1.5rem 0.5rem;
+ height: 100%;
+ width: 100%;
+}
+.dro-contact-page .contact-box-first .iocall {
+      color: var(--e-global-color-accent);
+}
+.dro-contact-page .contact-box-first h5, p {
+      color: var(--e-global-color-a2e875e);
+}
+.dro-contact-page .contact-box {
+ background-color:var(--e-global-color-84ab9b4);
+ border-radius: 3px ;
+ padding: 1.5rem 1rem;
+ height: 100%;
+ width: 100%;
+}
+.dro-contact-page .contact-box .iomail,
+.famap {
+      color: var(--e-global-color-accent);
+}
+.dro-contact-page .contact-box h5 {
+      color: var(--e-global-color-primary);
+      font-weight: 400;
+}
+.dro-contact-page .contact-box p {
+      color: var(--e-global-color-text);
+}
+.map-container {
+  background-color: var(--e-global-color-84ab9b4);
+  padding: 5rem 0;
+}
+/* Map */
+.dro-contact-page .map-wrapper iframe {
+  width: 100%;
+  height: 30rem;
+  border: 0;
+  border-radius: 3px;
+  display: block;
+}

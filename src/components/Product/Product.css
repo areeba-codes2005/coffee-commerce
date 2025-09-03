@@ -1,0 +1,103 @@
+ :root {
+    --e-global-color-primary: #111111;
+    --e-global-color-secondary: #141414;
+    --e-global-color-text: #5A5A5A;
+    --e-global-color-accent: #FFCA3D;
+    --e-global-color-a2e875e: #FFFFFF;
+    --e-global-color-0c9653f: #F0ECEA;
+    --e-global-color-af230bd: #623D2D;
+    --e-global-color-d1c733e: #301D16;
+    --e-global-color-3b5cda1: #DDDDDD;
+    --e-global-color-84ab9b4: #F0ECEA;
+    --e-global-color-4a85818: #FFB900;
+    --e-global-color-37d844e: #2F2F2F;
+    --e-global-color-7f9c9d2: #F7F4F3;
+}
+.section-badge {
+    border: 1px solid var(--e-global-color-primary);
+    border-radius: 1rem;
+    color: var(--e-global-color-primary);
+    font-weight: bold;
+    width: fit-content;
+    font-size: 0.8rem;
+    padding: 0.4rem 1rem;
+    margin: 2rem auto;
+}
+.badge-icon {
+    margin-right: 0.3rem;
+}
+.section-title {
+    color: var(--e-global-color-primary);
+    font-size: 2.9rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+ .sale-badge {
+    position: absolute;
+    top: -0.5rem;
+    right: 0;
+    background-color: var(--e-global-color-af230bd);
+    color: var(--e-global-color-a2e875e); 
+    padding: .4rem 1rem;
+    border-radius: 3px;
+    font-weight: 800;
+    font-size: 0.9rem;
+    z-index: 1;
+ }
+ .product {
+    width: 100%;
+    height: auto;
+ }
+ .product-name {
+    color: var(--e-global-color-primary);
+    font-weight: 600;
+    padding-top: 1rem;
+ }
+ .product-price {
+    color: var(--e-global-color-primary);
+    font-weight: 800;
+    font-size: 1.1rem;
+ }
+ .product-oldpri {
+    color: var(--e-global-color-text);
+    font-weight: 800;
+    font-size: 1.1rem;
+    text-decoration: line-through;
+    padding-right: 0.3rem;
+ }
+.pro-add-car {
+    display: block;
+    background-color: var(--e-global-color-accent);
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--e-global-color-primary);
+    border: none;
+    border-radius: 3px;
+    padding: 0.5rem 1.2rem;
+    margin-top: 1rem;
+    line-height: 1;
+    transition: all .3s;
+}
+.pro-add-car:hover {
+    background-color: var(--e-global-color-4a85818);
+}
+/* tablet */
+@media (min-width: 768px) and (max-width: 1024px) { 
+.pro-add-car {
+    margin-bottom: 2rem;
+}
+.section-title {
+    font-size: 2rem;
+}
+}  
+/* mobile */
+@media (max-width: 575.98px) { 
+    .pro-add-car {
+    margin-bottom: 2rem;
+}
+.section-title {
+    font-size: 1.2rem;
+}
+ }

@@ -1,0 +1,84 @@
+:root {
+    --e-global-color-primary: #111111;
+    --e-global-color-secondary: #141414;
+    --e-global-color-text: #5A5A5A;
+    --e-global-color-accent: #FFCA3D;
+    --e-global-color-a2e875e: #FFFFFF;
+    --e-global-color-0c9653f: #F0ECEA;
+    --e-global-color-af230bd: #623D2D;
+    --e-global-color-d1c733e: #301D16;
+    --e-global-color-3b5cda1: #DDDDDD;
+    --e-global-color-84ab9b4: #F0ECEA;
+    --e-global-color-4a85818: #FFB900;
+    --e-global-color-37d844e: #2F2F2F;
+    --e-global-color-7f9c9d2: #F7F4F3;
+}
+.testi-page {
+    background-color: var(--e-global-color-d1c733e);
+    padding-top: 5rem;
+}
+.testi-badge {
+    border: 1px solid var(--e-global-color-a2e875e);
+    border-radius: 1rem;
+    color: var(--e-global-color-a2e875e);
+    font-weight: bold;
+    width: fit-content;
+    font-size: 0.8rem;
+    padding: 0.4rem 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.testi-icon {
+    margin-right: 0.3rem;
+}
+.testi-heading {
+    color: var(--e-global-color-a2e875e);
+    font-size: 2.6rem;
+}
+.testi-box {
+    background-color: var(--e-global-color-a2e875e);
+    padding: 1.3rem 1.2rem;
+    border-radius: 3px;
+}
+.testi-text {
+    font-style: italic;
+    color: var(--e-global-color-text);
+}
+.testi-person {
+    padding-top: 1.5rem;
+}
+.testi-photo {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 3px;
+}
+.testi-name {
+    color: var(--e-global-color-text);
+}
+.testi-role {
+    font-size: 0.875rem;
+    color: var(--e-global-color-text);
+}
+.testi-cocup {
+    width: 100%;
+    height: auto;
+    margin-top: -11.2rem;
+}
+/* tablet */
+@media (min-width: 768px) and (max-width: 1024px) { 
+.testi-heading {
+    font-size: 2.3rem;
+}
+.testi-cocup {
+    margin-top: 5rem;
+}
+}  
+/* mobile */
+@media (max-width: 575.98px) { 
+.testi-heading {
+    font-size: 2.2rem;
+}
+.testi-cocup {
+    margin-top: 5rem;
+}
+ }

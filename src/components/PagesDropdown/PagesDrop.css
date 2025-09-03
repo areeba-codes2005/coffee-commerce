@@ -1,0 +1,57 @@
+:root {
+    --e-global-color-primary: #111111;
+    --e-global-color-secondary: #141414;
+    --e-global-color-text: #5A5A5A;
+    --e-global-color-accent: #FFCA3D;
+    --e-global-color-a2e875e: #FFFFFF;
+    --e-global-color-0c9653f: #F0ECEA;
+    --e-global-color-af230bd: #623D2D;
+    --e-global-color-d1c733e: #301D16;
+    --e-global-color-3b5cda1: #DDDDDD;
+    --e-global-color-84ab9b4: #F0ECEA;
+    --e-global-color-4a85818: #FFB900;
+    --e-global-color-37d844e: #2F2F2F;
+    --e-global-color-7f9c9d2: #F7F4F3;
+}
+.pagedrop {
+    background-color: var(--e-global-color-d1c733e);
+    width: 11rem;
+    position: absolute;
+    top: 100%;
+    left: 8%;
+    right: 0;
+    border-radius: 5px;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(98, 61, 45, 0.1);
+    animation: dropdownFade 0.5s ease;
+}
+.pagedrop li a {
+    color: var(--e-global-color-a2e875e);
+    font-size: 1rem;
+    text-decoration: none;
+}
+.pagedrop li a:hover {
+    color: var(--e-global-color-accent);
+}
+@keyframes dropdownFade {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (max-width: 768px) {
+  .pagedrop {
+    left: 0;
+     top: 42%;
+  }
+}
+@media (max-width: 576px) {
+ .pagedrop {
+    left: 0;
+     top: 42%;
+  }
+  }

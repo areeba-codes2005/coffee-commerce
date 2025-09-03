@@ -1,0 +1,88 @@
+:root {
+    --e-global-color-primary: #111111;
+    --e-global-color-secondary: #141414;
+    --e-global-color-text: #5A5A5A;
+    --e-global-color-accent: #FFCA3D;
+    --e-global-color-a2e875e: #FFFFFF;
+    --e-global-color-0c9653f: #F0ECEA;
+    --e-global-color-af230bd: #623D2D;
+    --e-global-color-d1c733e: #301D16;
+    --e-global-color-3b5cda1: #DDDDDD;
+    --e-global-color-84ab9b4: #F0ECEA;
+    --e-global-color-4a85818: #FFB900;
+    --e-global-color-37d844e: #2F2F2F;
+    --e-global-color-7f9c9d2: #F7F4F3;
+}
+.in-car-con  {
+    background-color: var(--e-global-color-0c9653f);
+    padding: 7rem 0;
+    height: 100%;
+    width: 100%;
+}
+.in-car {
+    text-align: center;
+    padding: 2rem 1rem;
+    width: 100%;
+    height: 100%;
+}
+.col-12.col-md-6.col-lg-3:nth-of-type(3) .in-car {
+  background-color: var(--e-global-color-af230bd);
+}
+.in-car .in-ico{
+   color: var(--e-global-color-4a85818);
+}
+.in-car .card-title{
+   color: var(--e-global-color-text);
+   margin: 1rem 0;
+   font-weight: 400;
+}
+.in-car .card-text{
+   color: var(--e-global-color-text);
+}
+.col-12.col-md-6.col-lg-3:nth-of-type(3) .in-car .card-title,
+.col-12.col-md-6.col-lg-3:nth-of-type(3) .in-car .card-text{
+   color: var(--e-global-color-a2e875e);
+}
+.faq-car-heading {
+    text-align: center;
+    color: var(--e-global-color-primary);
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    font-weight: 400;
+}
+.faq-car-con {
+    margin-bottom: 7rem;
+}
+.faq-car {
+    border:  1px solid var(--e-global-color-secondary);
+    padding: 1rem;
+    height: 100%;
+    width: 100%;
+}
+.faq-car .yel-cir {
+    background-color: var(--e-global-color-4a85818);
+    width: 7.6rem;
+    height: 2.1rem;
+    border-radius: 50%;
+}
+.faq-car .card-title {
+   color: var(--e-global-color-secondary);
+   font-weight: 400;
+   margin-bottom: 1rem;
+}
+.faq-car .card-text {
+   color:  var(--e-global-color-text); 
+}
+/* tablet */
+@media (min-width: 768px) and (max-width: 1024px) { 
+.faq-car-heading {
+    font-size: 2.3rem;
+}
+}  
+/* mobile */
+@media (max-width: 575.98px) { 
+.faq-car-heading {
+    font-size: 1.3rem;
+}
+ }
