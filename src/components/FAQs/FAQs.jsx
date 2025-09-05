@@ -15,19 +15,11 @@ const FAQs = () => {
       <div className="container">
         <div className="row FAQs-row">
           <div className="col-12 col-md-7 col-lg-7">
-            <div
-              className="FAQs-badge"
-              data-aos="fade-up"
-              data-aos-offset="600"
-            >
+            <div className="FAQs-badge" data-aos="fade-up">
               <FaQuestion className="FAQs-icon" />
               <span>FAQS</span>
             </div>
-            <h2
-              className="FAQs-heading"
-              data-aos="fade-up"
-              data-aos-offset="600"
-            >
+            <h2 className="FAQs-heading" data-aos="fade-up">
               Need Help? We Have a Solution
             </h2>
           </div>
@@ -39,7 +31,7 @@ const FAQs = () => {
             </p>
           </div>
           <div className="col-12 col-md-12 col-lg-12">
-            <div className="accordion" data-aos="fade-up" data-aos-offset="600">
+            <div className="accordion" data-aos="fade-up">
               {faqData.map((item, index) => (
                 <div className="accordion-item" key={index}>
                   <div

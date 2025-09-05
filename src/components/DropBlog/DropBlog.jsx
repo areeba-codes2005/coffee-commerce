@@ -10,8 +10,8 @@ const DropBlog = ({ leftdata, rightdata }) => {
             <div key={index}>
               <img
                 src={leftItem.image}
-                className="img-fluid lef-col-img"
-                alt=""
+                className="img-fluid lef-col-img" loading="lazy"
+                alt="Cup of coffee"
               />
               <h4>{leftItem.post_title}</h4>
               <span>{leftItem.post_date}</span>
@@ -28,8 +28,8 @@ const DropBlog = ({ leftdata, rightdata }) => {
                 <div className="mt-4 me-3">
                   <img
                     src={rightItem.image}
-                    className="img-fluid rig-col-img"
-                    alt=""
+                    className="img-fluid rig-col-img" loading="lazy"
+                    alt="Cup of coffee"
                   />
                 </div>
                 <div className="mt-4">
